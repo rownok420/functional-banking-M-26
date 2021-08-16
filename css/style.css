@@ -1,0 +1,17 @@
+/* common style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header style  */
+
+.header-section h1{
+    font-size: 3em;
+}
+
+.dolar{
+    font-weight: bold;
+    font-size: 3em;
+}

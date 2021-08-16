@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <!-- css styleseet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="container header-section">
+                <h1 class="text-center mt-4">Let's get some <span class="fw-bold text-info">Moooony</span> !!!</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Balance and Transaction -->
+        <section class="my-5">
+            <div class="container">
+                <div class="row g-5 text-white">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="p-3  bg-info text-center rounded-3 p-5">
+                            <h2 class="fs-1 fw-bold mb-3">Deposit</h2>
+                            <h3 class="dolar">$<span id="deposit-total">000</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="p-3  bg-success text-center rounded-3 p-5">
+                            <h2 class="fs-1 fw-bold mb-3">Withdraw</h2>
+                            <h3 class="dolar">$<span id="withdraw-total">000</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-12col-12 col-md-12 col-lg-4">
+                        <div class="p-3 bg-primary text-center rounded-3 p-5">
+                            <h2 class="fs-1 fw-bold mb-3">Balance</h2>
+                            <h3 class="dolar">$<span id="balance-total">1240</span></h3>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw -->
+        <section class="my-5">
+            <div class="container">
+                <div class="row g-5 text-white">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="p-3  bg-warning text-center rounded-3 p-5">
+                            <h2 class="fs-1 fw-bold mb-3">Please Deposit</h2>
+                            <div>
+                                <form action="#" class="text-center">
+                                    <input id="deposit-input" type="number" class="w-75 p-2 border-3 border-primary rounded-3" name="" placeholder="$ amount you want to deposit"><br><br>
+                                    <input id="deposit-btn" type="button" class="border-0 bg-info py-2 px-4 fw-bold fs-5 rounded-3" value="Deposit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="p-3  bg-danger text-center rounded-3 p-5">
+                            <h2 class="fs-1 fw-bold mb-3">Please Withdraw</h2>
+                            <div>
+                                <form action="#" class="text-center">
+                                    <input id="withdraw-input" type="number" class="w-75 p-2 border-3 border-primary rounded-3" name="" placeholder="$ amount you want to withdraw"><br><br>
+                                    <input id="withdraw-btn" type="button" class="border-0 bg-info py-2 px-4 fw-bold fs-5 rounded-3" value="Withdraw">
+                                </form>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+            </div>     
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center mb-5">          
+            <button id="logout-btn" type="button" class="border-0 btn btn-info py-2 px-4 fw-bold fs-3 rounded-3" data-toggle="modal" data-target="#exampleModal">
+                Logout
+            </button>
+        </div>
+    </footer>
+    <!-- my banking js script  -->
+    <script src="js/banking1.js"></script>
+    <!-- bootstrap script cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
